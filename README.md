@@ -19,9 +19,9 @@ Code associated with paper: <a href="https://arxiv.org/abs/1711.00342">Orthogona
 To recreate the figures in the paper run the following script:
 ```bash
 ./single_instance_parameter_sweep.sh single_instance_dir
-./multi_instance_parameter_sweep.sh multi_instance_dir
+./multi_instance.sh multi_instance_dir
 ```
 
 This will create the figures in the relative folder: ./figures
 
-These scripts take a very long time and it is advisable that they run on a cluster. For our results we parallelized the for loops in each of these shell scripts and run it on multiple nodes on a cluster.
+These scripts take a very long time (on a single machine  the script `multi_instance.sh` will take approx. 250 hours) and it is advisable that they run on a cluster. For our results we parallelized the for loops in each of these shell scripts and run it on multiple nodes on a cluster.
